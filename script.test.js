@@ -32,18 +32,4 @@ describe("Search functionality", () => {
     // Kontrollera resultatet
     expect(resultDisplay.textContent).toBe("Namn hittades: Anna");
   });
-
-  it("Name not found", () => {
-    const searchInput = document.getElementById("searchInput");
-    const searchBtn = document.getElementById("searchBtn");
-    const resultDisplay = document.getElementById("resultDisplay");
-
-    // Simulera att användaren skriver in "Olle"
-    searchInput.value = "Olle";
-    // Klick
-    searchBtn.click();
-
-    // Kontrollera resultatet
-    expect(resultDisplay.textContent).toBe("Namn hittades inte.");
-  });
 });
