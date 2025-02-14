@@ -16,7 +16,7 @@ describe("Search functionality", () => {
 
     // Importera ditt script EFTER att elementen finns
     // så att de event listeners kan kopplas korrekt
-    require("./script.js");
+    require("./src/script.js");
   });
 
   it("Name found", () => {
